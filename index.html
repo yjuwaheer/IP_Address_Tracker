@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>IP Address Tracker</title>
+</head>
+<body>
+    <div class="main">
+        <div class="mainUpper">
+            <div class="title">IP Address Tracker</div>
+            <div class="searchContainer">
+                <input type="text" placeholder="Search for any IP address" id="data">
+                <div class="button" id="button">></div>
+            </div>
+        </div>
+
+        <!-- Ip Address information -->
+        <div class="information">
+            <div class="infoTitle">IP ADDRESS<br><span id="ipAddress">12345</span></div>
+            <div class="infoTitle">LOCATION<br><span id="location">12345</span></div>
+            <div class="infoTitle">COUNTRY<br><span id="country">12345</span></div>
+            <div class="infoTitle">CONTINENT<br><span id="continent">12345</span></div>
+        </div>
+
+        <div id="mapId"></div>
+    </div>
+
+    <!-- Script -->
+    <script src="./config.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
