@@ -1,5 +1,7 @@
+require("dotenv").config();
+
 // API Key
-const API_KEY = config.ACCESS_KEY;
+const API_KEY = process.env.ACCESS_KEY;
 
 // Get all the elements
 const mapId = document.getElementById('mapId');
