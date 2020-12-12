@@ -43,3 +43,6 @@ button.addEventListener('click', () => {
     console.log(newUrl);
     getData(newUrl);
 });
+
+// On load just an IP
+getData(`http://api.ipstack.com/8.8.8.8?access_key=${API_KEY}`);

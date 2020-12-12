@@ -113,3 +113,29 @@ body {
 #mapId { 
     height: 70vh;
 }
+
+@media only screen and (max-width: 900px) {
+    .information {
+        flex-direction: column;
+        height: 35vh;
+        justify-content: center;
+    }
+
+    .infoTitle:nth-child(2) {
+        border: none;
+    }
+
+    .infoTitle:nth-child(3) {
+        border: none;
+    }
+
+    .infoTitle:nth-child(4) {
+        border: none;
+    }
+
+    .information div {
+        padding-bottom: 2vh;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
