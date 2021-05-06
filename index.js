@@ -39,10 +39,10 @@ async function getData(urlData) {
 }
 
 button.addEventListener('click', () => {
-    let newUrl = `https://superlongrandom12345xyz.herokuapp.com/http://api.ipstack.com/${input.value}?access_key=${API_KEY}`;
+    let newUrl = `http://api.ipstack.com/${input.value}?access_key=${API_KEY}`;
     console.log(newUrl);
     getData(newUrl);
 });
 
 // On load just an IP
-getData(`https://superlongrandom12345xyz.herokuapp.com/http://api.ipstack.com/8.8.8.8?access_key=${API_KEY}`);
+getData(`http://api.ipstack.com/8.8.8.8?access_key=${API_KEY}`);
